@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- BASE: Modo claro -->
+    <style name="Base.Theme.SEM07" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Color principal (rojo institucional) -->
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+
+        <!-- Opcional: color secundario -->
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_light_onSecondary</item>
+
+        <!-- Color de barra de estado -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Tema principal que usás en AndroidManifest -->
+    <style name="Theme.SEM07" parent="Base.Theme.SEM07" />
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SEM07</string>
+    <string name="imagen_ubicacion">Imagen de la ubicación</string>
+    <string name="chip_todos">Todos</string>
+    <string name="chip_auditorio">Auditorio</string>
+    <string name="chip_plazuela">Plazuela</string>
+    <string name="chip_complejo">Complejo</string>
+    <string name="desc_lista_ubicaciones">Lista de ubicaciones</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ChipGroup con Chips de filtro -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupUbicaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipTodos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:text="@string/chip_todos"
+            android:contentDescription="@string/chip_todos" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPlazuela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:text="@string/chip_plazuela"
+            android:contentDescription="@string/chip_plazuela" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAuditorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:text="@string/chip_auditorio"
+            android:contentDescription="@string/chip_auditorio" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipComplejo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:text="@string/chip_complejo"
+            android:contentDescription="@string/chip_complejo" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Lista de ubicaciones -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerUbicaciones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:contentDescription="@string/desc_lista_ubicaciones"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/chipGroupUbicaciones"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

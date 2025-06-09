@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/agendaFragment"
+        android:icon="@drawable/ic_calendar"
+        android:title="Agenda" />
+    <item
+        android:id="@+id/seminariosFragment"
+        android:icon="@drawable/ic_microphone"
+        android:title="Seminarios" />
+    <item
+        android:id="@+id/ubicacionesFragment"
+        android:icon="@drawable/ic_location"
+        android:title="Ubicación" />
+</menu>
